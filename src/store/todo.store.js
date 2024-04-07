@@ -76,7 +76,7 @@ const deleteCompletedes = () => {
     saveStateToLoclaStorage();
 }
 
-const setFilter = (filter = Filters.All) => {
+const setFilter = (newFilter = Filters.All) => {
     state.filter = newFilter;
     saveStateToLoclaStorage();
 }
