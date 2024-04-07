@@ -72,7 +72,7 @@ const deleteTodo = (todoId) => {
 }
 
 const deleteCompletedes = () => {
-    state.todos= state.todos.filter(todo => todo.done);
+    state.todos= state.todos.filter(todo => !todo.done);
     saveStateToLoclaStorage();
 }
 
